@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">com.github.epub-a11y-checker.epub-a11y-tests-001</dc:identifier>
+        <dc:description>Samples for EPUB Accessibility Testing</dc:description>
+        <dc:title id="title">EPUB-A11Y-TESTS-001</dc:title>
+        <meta refines="title" property="title-type">main</meta>
+        <!-- repeat creator element for all contributors -->
+        <dc:creator id="creator1">Marisa DeMeglio</dc:creator>
+        <meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
+        <meta refines="#creator1" property="file-as">DeMeglio, Marisa</meta>
+        <dc:language>en</dc:language>
+        <meta property="dcterms:modified">2017-02-01T13:00:00Z</meta>
+    </metadata>
+    <manifest>
+        <!-- css -->
+        <item href="css/base.css" media-type="text/css" id="css"/>
+        <!-- images -->
+
+
+        <!-- frontmatter -->
+        <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
+        <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+        <!-- bodymatter -->
+        <!-- xhtml -->
+        <item href="xhtml/color-contrast.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+        <item href="xhtml/epub-type-and-aria.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
+        <item href="xhtml/heading-order-01.xhtml" id="xhtml-003" media-type="application/xhtml+xml"/>
+        <item href="xhtml/heading-order-02.xhtml" id="xhtml-004" media-type="application/xhtml+xml"/>
+        <item href="xhtml/image-desc.xhtml" id="xhtml-005" media-type="application/xhtml+xml"/>
+        <item href="xhtml/table-structure.xhtml" id="xhtml-006" media-type="application/xhtml+xml"/>
+        <item href="xhtml/out-of-spine-content.xhtml" id="xhtml-007" media-type="application/xhtml+xml"/>
+        <item href="xhtml/out-of-spine-content-embed.xhtml" id="xhtml-008" media-type="application/xhtml+xml"/>
+
+
+    </manifest>
+    <spine>
+        <itemref idref="front"/>
+        <itemref idref="nav" linear="no"/>
+        <itemref idref="xhtml-001"/>
+        <itemref idref="xhtml-002"/>
+        <itemref idref="xhtml-003"/>
+        <itemref idref="xhtml-004"/>
+        <itemref idref="xhtml-005"/>
+        <itemref idref="xhtml-006"/>
+        <itemref idref="xhtml-007"/>
+    </spine>
+</package>
