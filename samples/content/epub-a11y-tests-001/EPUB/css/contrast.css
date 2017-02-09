@@ -1,0 +1,41 @@
+/*1.35:1 and fails even for large font*/
+.fails-aa-ex1 {
+  font-size: large;
+  color: #ff5429;
+  background-color: #ff7db1;
+}
+
+/* 4.28:1 but fails for normal font size*/
+.fails-aa-ex2 {
+  color: #6d5fe8;
+  background-color: #eeff55;
+}
+
+
+/* fails because you should specify both the foreground and background colors */
+.fails-aaa-ex1 {
+  color: white;
+}
+
+/* 3.59:1 and fails even for large font size*/
+.fails-aaa-ex2 {
+  color: #5d5dff;
+  background-color: #e1e1e1;
+  font-size: large;
+}
+
+/* 6.29:1 but fails for normal font size*/
+.fails-aaa-ex3 {
+  color: #3e3eff;
+  background-color: white;
+}
+
+/* these fail level aa*/
+.-epub-media-overlay-active {
+  color: #6d5fe8;
+  background-color: #eeff55;
+}
+
+.-epub-media-overlay-playback-active {
+
+}

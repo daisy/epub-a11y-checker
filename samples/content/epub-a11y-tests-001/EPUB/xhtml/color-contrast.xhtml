@@ -4,13 +4,40 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contrast.css"  />
 </head>
 <body>
 
     <h1>Color Contrast</h1>
 
     <section>
-        <h2></h2>
+        <h2>Fails level AA</h2>
+
+        <p class="fails-aa-ex1">
+          <em>Example 1</em>: Fails because the ratio is too low (1.35:1) for even large font sizes. A ratio of 3:1 is required.
+        </p>
+
+        <p class="fails-aa-ex2">
+          <em>Example 2</em>: Fails because the ratio is too low (4.28:1) for a normal font size. A ratio of 4.5:1 is required.
+        </p>
+
+    </section>
+
+    <section>
+        <h2>Fails level AAA</h2>
+
+        <p class="fails-aaa-ex1">
+          <em>Example 1</em>: Fails because the background color is not specified.
+        </p>
+
+        <p class="fails-aaa-ex2">
+          <em>Example 2</em>: Fails because the ratio is too low (3.59:1) for even large font sizes. A ratio of 4.5:1 is required.
+        </p>
+
+        <p class="fails-aaa-ex3">
+          <em>Example 3</em>: Fails because the ratio is too low (6.29:1) for a normal font size. A ratio of 7:1 is required.
+        </p>
+
     </section>
 </body>
 </html>
