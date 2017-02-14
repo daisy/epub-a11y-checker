@@ -18,9 +18,8 @@
         <!-- for the currently-playing document -->
         <meta property="media:playback-active-class">-epub-media-overlay-playback-active</meta>
 
-        <!-- these values are wrong right now -->
-        <meta property="media:duration" refines="#smil-1">00:00:29.900</meta>
-        <meta property="media:duration">00:34:34.028</meta>
+        <meta property="media:duration" refines="#smil-1">00:00:33.431</meta>
+        <meta property="media:duration">00:00:33.431</meta>
     </metadata>
     <manifest>
         <!-- css -->
@@ -33,7 +32,6 @@
 
         <!-- audio -->
         <item id="mp3-1" href="audio/color-contrast-mo.mp3" media-type="audio/mpeg"/>
-
 
         <!-- frontmatter -->
         <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>

@@ -1,5 +1,26 @@
 <smil xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/ns/SMIL" version="3.0">
   <body epub:textref="../xhtml/color-contrast-mo.xhtml">
-  
+    <par>
+        <text src="../xhtml/color-contrast-mo.xhtml#t1"/>
+        <audio src="../audio/color-contrast-mo.mp3" clipBegin="00:00:00.000" clipEnd="00:00:02.717"/>
+      </par>
+      <seq epub:textref="../xhtml/color-contrast-mo.xhtml#t2">
+        <par>
+          <text src="../xhtml/color-contrast-mo.xhtml#t3"/>
+          <audio src="../audio/color-contrast-mo.mp3" clipBegin="00:00:02.717" clipEnd="00:00:05.065"/>
+        </par>
+        <par>
+          <text src="../xhtml/color-contrast-mo.xhtml#t4"/>
+          <audio src="../audio/color-contrast-mo.mp3" clipBegin="00:00:05.065" clipEnd="00:00:13.151"/>
+        </par>
+        <par>
+          <text src="../xhtml/color-contrast-mo.xhtml#t5"/>
+          <audio src="../audio/color-contrast-mo.mp3" clipBegin="00:00:13.151" clipEnd="00:00:24.127"/>
+        </par>
+        <par>
+          <text src="../xhtml/color-contrast-mo.xhtml#t6"/>
+          <audio src="../audio/color-contrast-mo.mp3" clipBegin="00:00:24.127" clipEnd="00:00:33.431"/>
+        </par>
+      </seq>
   </body>
 </smil>
