@@ -1,16 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Table Structure</h1>
-
-    <section>
-        <h2></h2>
+    <section class="OK">
+      <h2>Table with caption</h2>
+      <table>
+        <caption>A list of people</caption>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+      </table>
     </section>
-</body>
+    <section class="Error">
+      <h2>Table with duplicate caption and summary</h2>
+      <p id="summary">A list of people</p>
+      <table aria-describedby="summary">
+        <caption>A list of people</caption>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+      </table>
+    </section>
+    <section class="Warning">
+      <h2>Table with empty header</h2>
+      <table>
+        <caption>A list of people</caption>
+        <tr>
+          <th>First name</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+      </table>
+    </section>
+    <section class="Warning">
+      <h2>Table with missing ref in headers attribute</h2>
+      <table aria-describedby="summary">
+        <caption>Characteristics with positive and negative sides</caption>
+        <thead>
+          <tr>
+            <th id="n"> Negative</th>
+            <th> Characteristic</th>
+            <th> Positive</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="n r1"> Sad</td>
+            <th id="r1"> Mood</th>
+            <td> Happy</td>
+          </tr>
+          <tr>
+            <td headers="n r2"> Failing</td>
+            <th id="r2"> Grade</th>
+            <td> Passing</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="notice">
+      <h2>Table were some cells are not associated with all its headers</h2>
+      <table>
+        <tr>
+          <th rowspan="2" id="h">Homework</th>
+          <th colspan="3" id="e">Exams</th>
+          <th colspan="3" id="p">Projects</th>
+        </tr>
+        <tr>
+          <th id="e1" headers="e">1</th>
+          <th id="e2" headers="e">2</th>
+          <th id="ef" headers="e">Final</th>
+          <th id="p1" headers="p">1</th>
+          <th id="p2" headers="p">2</th>
+          <th id="pf" headers="p">Final</th>
+        </tr>
+        <tr>
+          <td headers="h">15%</td>
+          <td headers="e">15%</td>
+          <td headers="e e2">15%</td>
+          <td headers="e ef">20%</td>
+          <td headers="p p1">10%</td>
+          <td headers="p p2">10%</td>
+          <td headers="p pf">15%</td>
+        </tr>
+      </table>
+    </section>
+    <section class="OK">
+      <h2>Layout table</h2>
+      <table role="presentation">
+        <tr>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+      </table>
+    </section>
+    <section class="warning">
+      <h2>Layout table with caption</h2>
+      <table role="presentation">
+        <caption>This is a layout table</caption>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+      </table>
+    </section>
+    <section class="warning">
+      <h2>Layout table with summary</h2>
+      <p id="layoutsummary">This is a layout table</p>
+      <table role="presentation" aria-describedby="layoutsummary">
+        <tr>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+      </table>
+    </section>
+    <section class="warning">
+      <h2>Layout table with header cells</h2>
+      <table role="presentation">
+        <tr>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+      </table>
+    </section>
+  </body>
 </html>
