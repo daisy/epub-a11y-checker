@@ -4,13 +4,54 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/iframe.css" />
 </head>
 <body>
 
     <h1>Out-of-spine content</h1>
 
+    <p>
+      This page contains two out-of-spine content documents, each embedded in an <code>iframe</code> element.
+    </p>
+
     <section>
-        <h2></h2>
+
+      <h2>Correctly embedded iframe with inaccessible content</h2>
+
+      <p>
+        The embedded content below has accessibility errors, but the <code>iframe</code> itself is embedded properly.
+      </p>
+
+      <iframe
+        href="out-of-spine-content-embed-01.xhtml"
+        title="iframe test 1"
+        id="accessible-iframe">
+
+        Your reading system does not support inline frames. Please follow
+        <a href="out-of-spine-content-embed-01.xhtml">this link</a> to open the associated content document.
+
+      </iframe>
+
+    </section>
+
+
+    <section>
+
+      <h2>Incorrectly embedded iframe</h2>
+
+      <p>
+        The embedded content is accessible, but the <code>iframe</code> itself is embedded inaccessibly.
+      </p>
+
+
+      <iframe href="out-of-spine-content-embed-02.xhtml"
+        title=""
+        id="inaccessible-iframe">
+
+        <!-- no fallback content -->
+
+      </iframe>
+
     </section>
 </body>
 </html>
