@@ -1,16 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
-</head>
-<body>
-
+    <title>Tests for image descriptions</title>
+  </head>
+  <body>
     <h1>Image Descriptions</h1>
-
-    <section>
-        <h2></h2>
+    <section class="OK">
+      <h2>Image with relevant alt description</h2>
+      <img src="../images/daisy.png" alt="The DAISY Consortium" />
     </section>
-</body>
+    <section class="Error">
+      <h2>Image with no alt attribute</h2>
+      <img src="../images/daisy.png" />
+    </section>
+    <section class="OK">
+      <h2>Hideen image with no alt attribute</h2>
+      <img src="../images/daisy.png" style="display: none"/>
+    </section>
+    <section class="OK">
+      <h2>Image with empty alt attribute</h2>
+      <p> The DAISY Consortium <img src="../images/daisy.png" alt="" /></p>
+    </section>
+    <section class="OK">
+      <h2>Decorative image (role presentation) with empty alt attribute</h2>
+      <p> The DAISY Consortium <img src="../images/daisy.png" alt="" role="presentation" /></p>
+    </section>
+    <section class="OK">
+      <h2>Ignorable image (role none) with empty alt attribute</h2>
+      <p> The DAISY Consortium <img src="../images/daisy.png" alt="" role="none" /></p>
+    </section>
+    <section class="OK">
+      <h2>Decorative image (role none presentation) with empty alt attribute</h2>
+      <p> The DAISY Consortium <img src="../images/daisy.png" alt="" role="none presentation" /></p>
+    </section>
+    <section class="Error">
+      <h2>Decorative image (role presentation) with non-empty alt attribute</h2>
+      <p> The DAISY Consortium <img src="../images/daisy.png" alt="DAISY Consortium" role="presentation"/></p>
+    </section>
+    <section class="Error">
+      <h2>Decorative image (role presentation) with empty alt attribute but non-empty title</h2>
+      <p> The DAISY Consortium <img src="../images/daisy.png" alt="" title="DAISY Consortium" role="presentation"/></p>
+    </section>
+    <section class="Notice">
+      <h2>Image with useless/generated alt content</h2>
+      <img src="../images/daisy.png" alt="text" />
+    </section>
+    <section class="Notice">
+      <h2>Image with useless/generated alt content (2)</h2>
+      <img src="../images/daisy.png" alt="alt" />
+    </section>
+    <section class="Notice">
+      <h2>Image described by aria-label</h2>
+      <img src="../images/daisy.png" alt="DAISY" aria-label="DAISY" />
+    </section>
+    <section class="Error">
+      <h2>Decorative image only content of a link</h2>
+      <a href="http://daisy.org"><img src="../images/daisy.png" alt="" role="presentation" /></a>
+    </section>
+    <section class="Warning">
+      <h2>Image link with alt duplicating link text</h2>
+      <a href="http://daisy.org"><img src="../images/daisy.png" alt="DAISY" />DAISY</a>
+    </section>
+  </body>
 </html>

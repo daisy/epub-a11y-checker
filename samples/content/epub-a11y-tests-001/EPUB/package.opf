@@ -27,6 +27,8 @@
         <item href="css/contrast.css" media-type="text/css" id="css-contrast"/>
         <!-- images -->
         <item href="images/cat.jpg" media-type="image/jpeg" id="img-01"/>
+        <item id="img-001" href="images/daisy.png" media-type="image/png"/>
+
 
         <!-- media overlays -->
         <item id="smil-1" href="mo/color-contrast-mo.smil" media-type="application/smil+xml"/>
@@ -43,11 +45,12 @@
         <item href="xhtml/epub-type-and-aria.xhtml" id="xhtml-002" media-type="application/xhtml+xml"/>
         <item href="xhtml/heading-order-01.xhtml" id="xhtml-003" media-type="application/xhtml+xml"/>
         <item href="xhtml/heading-order-02.xhtml" id="xhtml-004" media-type="application/xhtml+xml"/>
-        <item href="xhtml/image-desc.xhtml" id="xhtml-005" media-type="application/xhtml+xml"/>
-        <item href="xhtml/table-structure.xhtml" id="xhtml-006" media-type="application/xhtml+xml"/>
-        <item href="xhtml/out-of-spine-content.xhtml" id="xhtml-007" media-type="application/xhtml+xml"/>
-        <item href="xhtml/out-of-spine-content-embed-01.xhtml" id="xhtml-008" media-type="application/xhtml+xml"/>
-        <item href="xhtml/color-contrast-mo.xhtml" id="xhtml-009" media-type="application/xhtml+xml"/>
+        <item href="xhtml/heading-order-03.xhtml" id="xhtml-005" media-type="application/xhtml+xml"/>
+        <item href="xhtml/image-desc.xhtml" id="xhtml-006" media-type="application/xhtml+xml"/>
+        <item href="xhtml/table-structure.xhtml" id="xhtml-007" media-type="application/xhtml+xml"/>
+        <item href="xhtml/out-of-spine-content.xhtml" id="xhtml-008" media-type="application/xhtml+xml"/>
+        <item href="xhtml/out-of-spine-content-embed.xhtml" id="xhtml-009" media-type="application/xhtml+xml"/>
+        <item href="xhtml/color-contrast-mo.xhtml" id="xhtml-010" media-type="application/xhtml+xml"/>
         <item href="xhtml/out-of-spine-content-embed-02.xhtml" id="xhtml-010" media-type="application/xhtml+xml"/>
 
 
@@ -55,13 +58,14 @@
     <spine>
         <itemref idref="front"/>
         <itemref idref="nav" linear="no"/>
-        <itemref idref="xhtml-005"/>
-        <itemref idref="xhtml-006"/>
+        <itemref idref="xhtml-001"/>
+        <itemref idref="xhtml-002"/>
         <itemref idref="xhtml-003"/>
         <itemref idref="xhtml-004"/>
-        <itemref idref="xhtml-001"/>
-        <itemref idref="xhtml-009"/>
-        <itemref idref="xhtml-002"/>
+        <itemref idref="xhtml-005"/>
+        <itemref idref="xhtml-006"/>
         <itemref idref="xhtml-007"/>
+        <itemref idref="xhtml-008"/>
+        <itemref idref="xhtml-010"/>
     </spine>
 </package>
