@@ -1,16 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
 </head>
 <body>
 
-    <h1>epub:type and ARIA</h1>
+    <h1><code>epub:type</code> and ARIA</h1>
 
-    <section>
-        <h2></h2>
+    <section epub:type="part">
+        <h2>Examples of <code>epub:type</code></h2>
+        <p>
+          <code>epub:type</code> is used to add semantics to an element. For example, you can refer to a footnote []<a epub:type="noteref" href="#fn01">1</a>].
+        </p>
+
+        <aside epub:type="tip">
+          <h2>Tip!</h2>
+          <p>
+            Learn about the <a href="https://idpf.github.io/epub-vocabs/structure/">structural semantics vocabulary</a> in EPUB.
+          </p>
+        </aside>
+
+
+        <aside id="fn01" epub:type="footnote">
+           <p>
+              This footnote goes with the reference in the above text.
+           </p>
+        </aside>
     </section>
+
+    <section epub:type="part">
+        <h2>Examples of ARIA</h2>
+
+        <p>
+          The following uses <code>aria-describedby</code> and <code>role</code> to associate a tooltip with an element.
+        </p>
+
+        <div aria-describedby="test">text</div>
+
+        <div id="test" role="tooltip">tooltip text</div>
+
+    </section>
+
+
 </body>
 </html>
