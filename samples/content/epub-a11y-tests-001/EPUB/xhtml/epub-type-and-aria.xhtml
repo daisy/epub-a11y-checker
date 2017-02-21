@@ -9,19 +9,11 @@
 
     <h1><code>epub:type</code> and ARIA</h1>
 
-    <section epub:type="part">
-        <h2>Examples of <code>epub:type</code></h2>
+    <section class="OK">
+        <h2><span class="test-id">EPUBTYPE-01</span>Footnotes</h2>
         <p>
-          <code>epub:type</code> is used to add semantics to an element. For example, you can refer to a footnote []<a epub:type="noteref" href="#fn01">1</a>].
+          <code>epub:type</code> is used to add semantics to an element. For example, you can refer to a footnote [<a epub:type="noteref" href="#fn01">1</a>].
         </p>
-
-        <aside epub:type="tip">
-          <h2>Tip!</h2>
-          <p>
-            Learn about the <a href="https://idpf.github.io/epub-vocabs/structure/">structural semantics vocabulary</a> in EPUB.
-          </p>
-        </aside>
-
 
         <aside id="fn01" epub:type="footnote">
            <p>
@@ -30,8 +22,17 @@
         </aside>
     </section>
 
-    <section epub:type="part">
-        <h2>Examples of ARIA</h2>
+    <section class="OK">
+      <h2><span class="test-id">EPUBTYPE-02</span>Tips</h2>
+        <aside epub:type="tip">
+          <p>
+            Learn about the <a href="https://idpf.github.io/epub-vocabs/structure/">structural semantics vocabulary</a> in EPUB.
+          </p>
+        </aside>
+    </section>
+
+    <section class="OK">
+        <h2><span class="test-id">ARIA-01</span>ARIA Tooltip</h2>
 
         <p>
           The following uses <code>aria-describedby</code> and <code>role</code> to associate a tooltip with an element.

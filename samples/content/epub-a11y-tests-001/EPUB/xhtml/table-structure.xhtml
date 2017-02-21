@@ -8,7 +8,7 @@
   <body>
     <h1>Table Structure</h1>
     <section class="OK">
-      <h2>Table with caption</h2>
+      <h2><span class="test-id">TABLESTRUCT-01</span>Table with caption</h2>
       <table>
         <caption>A list of people</caption>
         <tr>
@@ -25,8 +25,8 @@
         </tr>
       </table>
     </section>
-    <section class="Error">
-      <h2>Table with duplicate caption and summary</h2>
+    <section class="error">
+      <h2><span class="test-id">TABLESTRUCT-02</span>Table with duplicate caption and summary</h2>
       <p id="summary">A list of people</p>
       <table aria-describedby="summary">
         <caption>A list of people</caption>
@@ -44,8 +44,8 @@
         </tr>
       </table>
     </section>
-    <section class="Warning">
-      <h2>Table with empty header</h2>
+    <section class="warning">
+      <h2><span class="test-id">TABLESTRUCT-03</span>Table with empty header</h2>
       <table>
         <caption>A list of people</caption>
         <tr>
@@ -62,8 +62,8 @@
         </tr>
       </table>
     </section>
-    <section class="Warning">
-      <h2>Table with missing ref in headers attribute</h2>
+    <section class="warning">
+      <h2><span class="test-id">TABLESTRUCT-04</span>Table with missing ref in headers attribute</h2>
       <table aria-describedby="summary">
         <caption>Characteristics with positive and negative sides</caption>
         <thead>
@@ -88,7 +88,7 @@
       </table>
     </section>
     <section class="notice">
-      <h2>Table were some cells are not associated with all its headers</h2>
+      <h2><span class="test-id">TABLESTRUCT-05</span>Table where some cells are not associated with all its headers</h2>
       <table>
         <tr>
           <th rowspan="2" id="h">Homework</th>
@@ -115,7 +115,7 @@
       </table>
     </section>
     <section class="OK">
-      <h2>Layout table</h2>
+      <h2><span class="test-id">TABLESTRUCT-06</span>Layout table</h2>
       <table role="presentation">
         <tr>
           <td>A</td>
@@ -128,7 +128,7 @@
       </table>
     </section>
     <section class="warning">
-      <h2>Layout table with caption</h2>
+      <h2><span class="test-id">TABLESTRUCT-07</span>Layout table with caption</h2>
       <table role="presentation">
         <caption>This is a layout table</caption>
         <tr>
@@ -142,7 +142,7 @@
       </table>
     </section>
     <section class="warning">
-      <h2>Layout table with summary</h2>
+      <h2><span class="test-id">TABLESTRUCT-08</span>Layout table with summary</h2>
       <p id="layoutsummary">This is a layout table</p>
       <table role="presentation" aria-describedby="layoutsummary">
         <tr>
@@ -156,7 +156,7 @@
       </table>
     </section>
     <section class="warning">
-      <h2>Layout table with header cells</h2>
+      <h2><span class="test-id">TABLESTRUCT-09</span>Layout table with header cells</h2>
       <table role="presentation">
         <tr>
           <th>A</th>

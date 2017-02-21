@@ -10,34 +10,68 @@
 
     <h1>Color Contrast</h1>
 
-    <section>
-        <h2>Fails level AA</h2>
-
-        <p class="fails-aa-ex1">
-          <em>Example 1</em>: Fails because the ratio is too low (1.35:1) for even large font sizes. A ratio of 3:1 is required.
-        </p>
-
-        <p class="fails-aa-ex2">
-          <em>Example 2</em>: Fails because the ratio is too low (4.28:1) for a normal font size. A ratio of 4.5:1 is required.
-        </p>
-
+    <section class="OK">
+      <h2><span class="test-id">CLRCONTRAST-01</span>Passes Level AA</h2>
+      <p class="passes-aa-ex1">
+        Passes because a minimum ratio of 3:1 is appropriate for large font.
+      </p>
     </section>
 
-    <section>
-        <h2>Fails level AAA</h2>
+    <section class="OK">
+      <h2><span class="test-id">CLRCONTRAST-02</span>Passes Level AA</h2>
+      <p class="passes-aa-ex2">
+        Passes because a minimum ratio of 4.5:1 is appropriate for normal-sized font.
+      </p>
+    </section>
 
+
+    <section class="error">
+        <h2><span class="test-id">CLRCONTRAST-03</span>Fails Level AA</h2>
+        <p class="fails-aa-ex1">
+          Fails because the ratio is too low (1.35:1) for even large font sizes. A ratio of 3:1 is required.
+        </p>
+    </section>
+
+    <section class="error">
+        <h2><span class="test-id">CLRCONTRAST-04</span>Fails Level AA</h2>
+        <p class="fails-aa-ex2">
+          Fails because the ratio is too low (4.28:1) for a normal font size. A ratio of 4.5:1 is required.
+        </p>
+    </section>
+
+    <section class="OK">
+      <h2><span class="test-id">CLRCONTRAST-05</span>Passes Level AAA</h2>
+      <p class="passes-aaa-ex1">
+        Passes because a minimum ratio of 4.5:1 is appropriate for large font.
+      </p>
+    </section>
+
+    <section class="OK">
+      <h2><span class="test-id">CLRCONTRAST-06</span>Passes Level AAA</h2>
+      <p class="passes-aaa-ex2">
+        Passes because a minimum ratio of 4.5:1 is appropriate for large font.
+      </p>
+    </section>
+
+    <section class="error">
+        <h2><span class="test-id">CLRCONTRAST-07</span>Fails level AAA</h2>
         <p class="fails-aaa-ex1">
-          <em>Example 1</em>: Fails because the background color is not specified.
+          Fails because the background color is not specified.
         </p>
+    </section>
 
+    <section class="error">
+        <h2><span class="test-id">CLRCONTRAST-08</span>Fails Level AAA</h2>
         <p class="fails-aaa-ex2">
-          <em>Example 2</em>: Fails because the ratio is too low (3.59:1) for even large font sizes. A ratio of 4.5:1 is required.
+          Fails because the ratio is too low (3.59:1) for even large font sizes. A ratio of 4.5:1 is required.
         </p>
+    </section>
 
+    <section class="error">
+        <h2><span class="test-id">CLRCONTRAST-09</span>Fails Level AAA Example 3</h2>
         <p class="fails-aaa-ex3">
-          <em>Example 3</em>: Fails because the ratio is too low (6.29:1) for a normal font size. A ratio of 7:1 is required.
+          Fails because the ratio is too low (6.29:1) for a normal font size. A ratio of 7:1 is required.
         </p>
-
     </section>
 </body>
 </html>

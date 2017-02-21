@@ -55,3 +55,15 @@
   color: #3e3eff;
   background-color: white;
 }
+
+/* 2.3:1 fails level AA*/
+.-epub-media-overlay-active {
+  color: #9a9aff;
+  background-color: #fbff18;
+}
+
+/* 2.66:1 fails level AA*/
+.-epub-media-overlay-playback-active {
+  color: #7e8b91;
+  background-color: #e0e0e0;
+}

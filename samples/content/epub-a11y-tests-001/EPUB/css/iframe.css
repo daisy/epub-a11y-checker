@@ -1,11 +1,9 @@
-#accessible-iframe {
-  height: 50%;
-  width: 80%;
+.accessible-iframe {
+
   /* TODO: make scrolling auto*/
 
 }
 
-#inaccessible-iframe {
-  height: 10px;
-  width: 10px;
+.inaccessible-iframe {
+
 }

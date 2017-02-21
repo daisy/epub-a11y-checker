@@ -11,13 +11,12 @@
     <h1>Out-of-spine content</h1>
 
     <p>
-      This page contains two out-of-spine content documents, each embedded in an <code>iframe</code> element.
+      This page contains three out-of-spine content documents, each embedded in an <code>iframe</code> element.
     </p>
 
-    <section>
+    <section class="error">
 
-      <h2>Correctly embedded iframe with inaccessible content</h2>
-
+      <h2><span class="test-id">OUTOFSPN-01</span>Correctly embedded iframe with inaccessible content</h2>
       <p>
         The embedded content below has accessibility errors, but the <code>iframe</code> itself is embedded properly.
       </p>
@@ -25,7 +24,7 @@
       <iframe
         src="out-of-spine-content-embed-01.xhtml"
         title="iframe test 1"
-        id="accessible-iframe">
+        class="accessible-iframe">
 
         <p>
           Your reading system does not support inline frames. Please follow
@@ -37,23 +36,46 @@
     </section>
 
 
-    <section>
+    <section class="error">
 
-      <h2>Incorrectly embedded iframe</h2>
+      <h2><span class="test-id">OUTOFSPN-02</span>Incorrectly embedded iframe</h2>
 
       <p>
         The embedded content is accessible, but the <code>iframe</code> itself is embedded inaccessibly.
       </p>
 
 
-      <iframe src="out-of-spine-content-embed-02.xhtml"
+      <iframe
+        src="out-of-spine-content-embed-02.xhtml"
         title=""
-        id="inaccessible-iframe">
+        class="inaccessible-iframe">
 
         <!-- no fallback content -->
 
       </iframe>
 
     </section>
+
+    <section class="OK">
+      <h2><span class="test-id">OUTOFSPN-03</span>Correctly embedded accessible iframe</h2>
+
+      <p>
+        The content below is accessible and it is embedded correctly.
+      </p>
+      <iframe
+        src="out-of-spine-content-embed-02.xhtml"
+        title="iframe test 3"
+        class="accessible-iframe">
+
+        <p>
+          Your reading system does not support inline frames. Please follow
+          <a href="out-of-spine-content-embed-02.xhtml">this link</a> to open the associated content document.
+        </p>
+
+      </iframe>
+
+
+    </section>
+
 </body>
 </html>
