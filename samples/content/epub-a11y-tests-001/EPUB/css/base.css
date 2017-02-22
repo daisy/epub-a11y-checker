@@ -69,7 +69,7 @@ aside[epub|type~="footnote"]
 {
    font-size: 80%;
    font-style: italic;
-   color:gray;
+
 
    margin-left: 1em;
    margin-right: 1em;
@@ -128,7 +128,7 @@ overflow:hidden;
 }
 
 .test-id {
-  color: grey;
+  color: #515151;
   font-variant: small-caps;
   font-size: smaller;
 }

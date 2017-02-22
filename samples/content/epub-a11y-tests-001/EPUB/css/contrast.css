@@ -1,6 +1,6 @@
 /* 3.59:1, large font*/
 .passes-aa-ex1 {
-  font-size: large;
+  font-size: x-large;
   color: #5d5dff;
   background-color: #e1e1e1;
 }
@@ -15,7 +15,7 @@
 .passes-aaa-ex1 {
   color: #3e3eff;
   background-color: white;
-  font-size: large;
+  font-size: x-large;
 }
 /* 9.78:1*/
 .passes-aaa-ex2 {
@@ -26,7 +26,7 @@
 
 /*1.35:1 and fails level AA even for large font*/
 .fails-aa-ex1 {
-  font-size: large;
+  font-size: x-large;
   color: #ff5429;
   background-color: #ff7db1;
 }
@@ -47,7 +47,7 @@
 .fails-aaa-ex2 {
   color: #5d5dff;
   background-color: #e1e1e1;
-  font-size: large;
+  font-size: x-large;
 }
 
 /* 6.29:1 but fails level AAA for normal font size*/

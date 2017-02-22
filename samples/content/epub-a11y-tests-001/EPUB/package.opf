@@ -45,13 +45,13 @@
     <spine>
         <itemref idref="front"/>
         <itemref idref="nav" linear="no"/>
-        <itemref idref="xhtml-001"/>
-        <itemref idref="xhtml-002"/>
+        <itemref idref="xhtml-006"/>
+        <itemref idref="xhtml-007"/>
         <itemref idref="xhtml-003"/>
         <itemref idref="xhtml-004"/>
         <itemref idref="xhtml-005"/>
-        <itemref idref="xhtml-006"/>
-        <itemref idref="xhtml-007"/>
+        <itemref idref="xhtml-001"/>
+        <itemref idref="xhtml-002"/>
         <itemref idref="xhtml-008"/>
     </spine>
 </package>
