@@ -1,2 +1,3 @@
 # epub-a11y-checker
-Accessibility checking tool for EPUB content
+
+**NOTE** This project was a placeholder for [Ace](https://github.com/daisy/ace) and [Ace SMART](https://github.com/daisy/ace-smart) and is now archived.
